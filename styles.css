@@ -489,18 +489,30 @@ article h3{
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
-.size-buttons{
-    display:flex;
+.hidden-radio {
+    display: none;
+}
+.size-buttons {
+    display: flex;
     gap: 0.5rem;
     margin-bottom: 2rem;
 }
-.size-buttons button{
+.size-button {
     background: white;
     border: 1px solid #ddd;
     padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: inline-block;
 }
-.size-buttons button:hover{
+.size-button:hover {
     border-color: #171b26;
+}
+.hidden-radio:checked + .size-button { /*Not entirely a recipe, but i got the idea from: https://www.w3schools.com/cssref/sel_checked.php*/
+    border-color: #171b26;
+    background-color: #eaeaea;
+}
+.hidden-radio:checked + .color-dot {
+    outline: 2px solid #171b26;
 }
 .product-actions{
     display: flex;

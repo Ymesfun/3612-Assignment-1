@@ -37,24 +37,38 @@
                 <h2 class="product-price">$199.99</h2>
                 <p class="product-description">This luxurious cable knit sweater is made from 100% merino wool for exceptional warmth and softness. The classic cable pattern adds timeless texture and visual interest to this versatile piece. Natural temperature regulation properties make it perfect for transitional seasons.</p>
                 <form action="https://www.randyconnolly.com/tests/process.php" method="post">
+                    <input type="hidden" name="id" value="3">
                     <div class="product-options">
                         <label>Size:</label>
                         <div class="size-buttons">
-                            <button type="button">XS</button>
-                            <button type="button">S</button>
-                            <button type="button">M</button>
-                            <button type="button">L</button>
-                            <button type="button">XL</button>
-                            <button type="button">XXL</button>
+                            <input type="radio" id="size-xs" name="size" value="XS" class="hidden-radio">
+                            <label for="size-xs" class="size-button">XS</label>
+                            <input type="radio" id="size-s" name="size" value="S" class="hidden-radio">
+                            <label for="size-s" class="size-button">S</label>
+                            <input type="radio" id="size-m" name="size" value="M" class="hidden-radio">
+                            <label for="size-m" class="size-button">M</label>
+                            <input type="radio" id="size-l" name="size" value="L" class="hidden-radio">                                
+                            <label for="size-l" class="size-button">L</label>
+                            <input type="radio" id="size-xl" name="size" value="XL" class="hidden-radio">                                
+                            <label for="size-xl" class="size-button">XL</label>
+                            <input type="radio" id="size-xxl" name="size" value="XXL" class="hidden-radio">                                
+                            <label for="size-xxl" class="size-button">XXL</label>
                         </div>
                     </div>
                     <div class="product-options">
                         <label>Color:</label>
                         <div class="color-buttons">
-                            <button type="button" class="color-dot sugar-quill"></button>
-                            <button type="button" class="color-dot dark-gray"></button>
-                            <button type="button" class="color-dot dark-blue"></button>
-                            <button type="button" class="color-dot rust-orange"></button>
+                            <input type="radio" id="color-cream" name="color" value="Cream" class="hidden-radio">
+                            <label for="color-cream" class="color-dot sugar-quill"></label>
+                            
+                            <input type="radio" id="color-charcoal" name="color" value="Charcoal" class="hidden-radio">
+                            <label for="color-charcoal" class="color-dot dark-gray"></label>
+
+                            <input type="radio" id="color-navy" name="color" value="Navy" class="hidden-radio">
+                            <label for="color-navy" class="color-dot dark-blue"></label>
+
+                            <input type="radio" id="color-burgundy" name="color" value="Burgundy" class="hidden-radio">
+                            <label for="color-burgundy" class="color-dot rust-orange"></label>
                         </div>
                     </div>
                     <div class="product-options">
